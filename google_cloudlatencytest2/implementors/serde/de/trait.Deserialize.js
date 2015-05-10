@@ -1,0 +1,10 @@
+(function() {var implementors = {};
+implementors['serde'] = [];implementors['yup_oauth2'] = ["impl <a class='trait' href='serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='yup_oauth2/struct.Token.html' title='yup_oauth2::Token'>Token</a>","impl <a class='trait' href='serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='yup_oauth2/struct.ApplicationSecret.html' title='yup_oauth2::ApplicationSecret'>ApplicationSecret</a>","impl <a class='trait' href='serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='yup_oauth2/struct.ConsoleApplicationSecret.html' title='yup_oauth2::ConsoleApplicationSecret'>ConsoleApplicationSecret</a>",];implementors['google_cloudlatencytest2'] = ["impl <a class='trait' href='serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='google_cloudlatencytest2/struct.ErrorResponse.html' title='google_cloudlatencytest2::ErrorResponse'>ErrorResponse</a>","impl <a class='trait' href='serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='google_cloudlatencytest2/struct.AggregatedStatsReply.html' title='google_cloudlatencytest2::AggregatedStatsReply'>AggregatedStatsReply</a>","impl <a class='trait' href='serde/de/trait.Deserialize.html' title='serde::de::Deserialize'>Deserialize</a> for <a class='struct' href='google_cloudlatencytest2/struct.StatsReply.html' title='google_cloudlatencytest2::StatsReply'>StatsReply</a>",];
+
+            if (window.register_implementors) {
+                window.register_implementors(implementors);
+            } else {
+                window.pending_implementors = implementors;
+            }
+        
+})()
