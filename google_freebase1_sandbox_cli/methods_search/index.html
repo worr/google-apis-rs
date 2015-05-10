@@ -132,9 +132,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
+<p><strong>-p stemmed=boolean</strong></p>
+<ul>
+<li>Query on stemmed names and aliases. May not be used with prefixed.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p help=string</strong></p>
+<ul>
+<li>The keyword to request help on.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p domain=string</strong></p>
 <ul>
 <li>Restrict to topics with this Freebase domain id.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p format=string</strong></p>
+<ul>
+<li>Structural format of the json response.</li>
 </ul>
 </li>
 <li>
@@ -150,9 +168,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p help=string</strong></p>
+<p><strong>-p query=string</strong></p>
 <ul>
-<li>The keyword to request help on.</li>
+<li>Query term to search for.</li>
 </ul>
 </li>
 <li>
@@ -162,21 +180,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p format=string</strong></p>
+<p><strong>-p exact=boolean</strong></p>
 <ul>
-<li>Structural format of the json response.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p stemmed=boolean</strong></p>
-<ul>
-<li>Query on stemmed names and aliases. May not be used with prefixed.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p filter=string</strong></p>
-<ul>
-<li>A filter to apply to the query.</li>
+<li>Query on exact name and keys only.</li>
 </ul>
 </li>
 <li>
@@ -186,33 +192,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p query=string</strong></p>
+<p><strong>-p filter=string</strong></p>
 <ul>
-<li>Query term to search for.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p with=string</strong></p>
-<ul>
-<li>A rule to match against.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p exact=boolean</strong></p>
-<ul>
-<li>Query on exact name and keys only.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p prefixed=boolean</strong></p>
-<ul>
-<li>Prefix match against names and aliases.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p cursor=integer</strong></p>
-<ul>
-<li>The cursor value to use for the next page of results.</li>
+<li>A filter to apply to the query.</li>
 </ul>
 </li>
 <li>
@@ -222,9 +204,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p prefixed=boolean</strong></p>
+<ul>
+<li>Prefix match against names and aliases.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p with=string</strong></p>
+<ul>
+<li>A rule to match against.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p mid=string</strong></p>
 <ul>
 <li>A mid to use instead of a query.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p cursor=integer</strong></p>
+<ul>
+<li>The cursor value to use for the next page of results.</li>
 </ul>
 </li>
 <li>
@@ -240,15 +240,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p output=string</strong></p>
-<ul>
-<li>An output expression to request data from matches.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p limit=integer</strong></p>
 <ul>
 <li>Maximum number of results to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p encode=string</strong></p>
+<ul>
+<li>The encoding of the response. You can use this parameter to enable html encoding.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p output=string</strong></p>
+<ul>
+<li>An output expression to request data from matches.</li>
 </ul>
 </li>
 <li>
@@ -261,12 +267,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p as-of-time=string</strong></p>
 <ul>
 <li>A mql as_of_time value to use with mql_output queries.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p encode=string</strong></p>
-<ul>
-<li>The encoding of the response. You can use this parameter to enable html encoding.</li>
 </ul>
 </li>
 </ul>
@@ -358,7 +358,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:39:10.727319
+Docs Build Date : 2015-05-10 18:09:13.006091
 -->
 </body>
 </html>

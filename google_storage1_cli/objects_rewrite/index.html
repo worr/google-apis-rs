@@ -511,9 +511,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p if-source-generation-not-match=string</strong></p>
+<p><strong>-p rewrite-token=string</strong></p>
 <ul>
-<li>Makes the operation conditional on whether the source object&#39;s generation does not match the given value.</li>
+<li>Include this field (from the previous Rewrite response) on each Rewrite request after the first one, until the Rewrite response &#39;done&#39; flag is true. Calls that provide a rewriteToken can omit all other request fields, but if included those fields must match the values provided in the first rewrite request.</li>
 </ul>
 </li>
 <li>
@@ -523,15 +523,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p max-bytes-rewritten-per-call=string</strong></p>
+<p><strong>-p if-source-generation-not-match=string</strong></p>
 <ul>
-<li>The maximum number of bytes that will be rewritten per Rewrite request. Most callers shouldn&#39;t need to specify this parameter - it is primarily in place to support testing. If specified the value must be an integral multiple of 1 MiB (1048576). Also, this only applies to requests where the source and destination span locations and/or storage classes. Finally, this value must not change across Rewrite calls else you&#39;ll get an error that the rewrite token is invalid.</li>
+<li>Makes the operation conditional on whether the source object&#39;s generation does not match the given value.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p destination-predefined-acl=string</strong></p>
+<p><strong>-p if-metageneration-match=string</strong></p>
 <ul>
-<li>Apply a predefined set of access controls to the destination object.</li>
+<li>Makes the operation conditional on whether the destination object&#39;s current metageneration matches the given value.</li>
 </ul>
 </li>
 <li>
@@ -547,33 +547,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p if-source-metageneration-not-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s current metageneration does not match the given value.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p if-generation-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the destination object&#39;s current generation matches the given value.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p if-metageneration-match=string</strong></p>
+<p><strong>-p max-bytes-rewritten-per-call=string</strong></p>
 <ul>
-<li>Makes the operation conditional on whether the destination object&#39;s current metageneration matches the given value.</li>
+<li>The maximum number of bytes that will be rewritten per Rewrite request. Most callers shouldn&#39;t need to specify this parameter - it is primarily in place to support testing. If specified the value must be an integral multiple of 1 MiB (1048576). Also, this only applies to requests where the source and destination span locations and/or storage classes. Finally, this value must not change across Rewrite calls else you&#39;ll get an error that the rewrite token is invalid.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p rewrite-token=string</strong></p>
+<p><strong>-p if-source-metageneration-not-match=string</strong></p>
 <ul>
-<li>Include this field (from the previous Rewrite response) on each Rewrite request after the first one, until the Rewrite response &#39;done&#39; flag is true. Calls that provide a rewriteToken can omit all other request fields, but if included those fields must match the values provided in the first rewrite request.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p if-source-metageneration-match=string</strong></p>
-<ul>
-<li>Makes the operation conditional on whether the source object&#39;s current metageneration matches the given value.</li>
+<li>Makes the operation conditional on whether the source object&#39;s current metageneration does not match the given value.</li>
 </ul>
 </li>
 <li>
@@ -586,6 +574,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p if-metageneration-not-match=string</strong></p>
 <ul>
 <li>Makes the operation conditional on whether the destination object&#39;s current metageneration does not match the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p if-source-metageneration-match=string</strong></p>
+<ul>
+<li>Makes the operation conditional on whether the source object&#39;s current metageneration matches the given value.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p destination-predefined-acl=string</strong></p>
+<ul>
+<li>Apply a predefined set of access controls to the destination object.</li>
 </ul>
 </li>
 </ul>
@@ -679,7 +679,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:39:44.405751
+Docs Build Date : 2015-05-10 18:09:44.806593
 -->
 </body>
 </html>

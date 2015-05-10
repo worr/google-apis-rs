@@ -350,21 +350,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p status=string</strong></p>
+<p><strong>-p labels=string</strong></p>
 <ul>
-<li>Statuses to include in the results.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p fetch-images=boolean</strong></p>
-<ul>
-<li>Whether image URL metadata for each post is included.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p view=string</strong></p>
-<ul>
-<li>Access level with which to view the returned result. Note that some fields require escalated access.</li>
+<li>Comma-separated list of labels to search for.</li>
 </ul>
 </li>
 <li>
@@ -374,27 +362,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p view=string</strong></p>
+<ul>
+<li>Access level with which to view the returned result. Note that some fields require escalated access.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p fetch-images=boolean</strong></p>
+<ul>
+<li>Whether image URL metadata for each post is included.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p status=string</strong></p>
+<ul>
+<li>Statuses to include in the results.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p fetch-bodies=boolean</strong></p>
 <ul>
 <li>Whether the body content of posts is included (default: true). This should be set to false when the post bodies are not required, to help minimize traffic.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p end-date=string</strong></p>
-<ul>
-<li>Latest post date to fetch, a date-time with RFC 3339 formatting.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p labels=string</strong></p>
-<ul>
-<li>Comma-separated list of labels to search for.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p order-by=string</strong></p>
-<ul>
-<li>Sort search results</li>
 </ul>
 </li>
 <li>
@@ -407,6 +395,18 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p start-date=string</strong></p>
 <ul>
 <li>Earliest post date to fetch, a date-time with RFC 3339 formatting.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p end-date=string</strong></p>
+<ul>
+<li>Latest post date to fetch, a date-time with RFC 3339 formatting.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p order-by=string</strong></p>
+<ul>
+<li>Sort search results</li>
 </ul>
 </li>
 </ul>
@@ -500,7 +500,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:38:05.787510
+Docs Build Date : 2015-05-10 18:08:12.451694
 -->
 </body>
 </html>

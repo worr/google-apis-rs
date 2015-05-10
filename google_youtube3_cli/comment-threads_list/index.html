@@ -573,12 +573,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p text-format=string</strong></p>
-<ul>
-<li>Set this parameter&#39;s value to html or plainText to instruct the API to return the comments left by users in html formatted or in plain text.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p channel-id=string</strong></p>
 <ul>
 <li>The channelId parameter instructs the API to return the comment threads for all the channel comments (not including comments left on videos).</li>
@@ -594,21 +588,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p id=string</strong></p>
-<ul>
-<li>The id parameter specifies a comma-separated list of comment thread IDs for the resources that should be retrieved.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p video-id=string</strong></p>
 <ul>
 <li>The videoId parameter instructs the API to return the comment threads for the video specified by the video id.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p all-threads-related-to-channel-id=string</strong></p>
-<ul>
-<li>The allThreadsRelatedToChannelId parameter instructs the API to return the comment threads of all videos of the channel and the channel comments as well.</li>
 </ul>
 </li>
 <li>
@@ -621,12 +603,30 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p all-threads-related-to-channel-id=string</strong></p>
+<ul>
+<li>The allThreadsRelatedToChannelId parameter instructs the API to return the comment threads of all videos of the channel and the channel comments as well.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p text-format=string</strong></p>
+<ul>
+<li>Set this parameter&#39;s value to html or plainText to instruct the API to return the comments left by users in html formatted or in plain text.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p moderation-status=string</strong></p>
 <ul>
 <li>
 <p>Set this parameter to limit the returned comment threads to a particular moderation state.</p>
 <p>Note: This parameter is not supported for use in conjunction with the id parameter.</p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p id=string</strong></p>
+<ul>
+<li>The id parameter specifies a comma-separated list of comment thread IDs for the resources that should be retrieved.</li>
 </ul>
 </li>
 </ul>
@@ -720,7 +720,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:38:56.076538
+Docs Build Date : 2015-05-10 18:08:59.515616
 -->
 </body>
 </html>

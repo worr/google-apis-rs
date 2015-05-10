@@ -357,15 +357,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p start-line=integer</strong></p>
+<p><strong>-p delimiter=string</strong></p>
 <ul>
-<li>The index of the first line from which to start importing, inclusive. Default is 0.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p is-strict=boolean</strong></p>
-<ul>
-<li>Whether the imported CSV must have the same number of values for each row. If false, rows with fewer values will be padded with empty values. Default is true.</li>
+<li>The delimiter used to separate cell values. This can only consist of a single character. Default is ,.</li>
 </ul>
 </li>
 <li>
@@ -381,9 +375,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p delimiter=string</strong></p>
+<p><strong>-p start-line=integer</strong></p>
 <ul>
-<li>The delimiter used to separate cell values. This can only consist of a single character. Default is ,.</li>
+<li>The index of the first line from which to start importing, inclusive. Default is 0.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p is-strict=boolean</strong></p>
+<ul>
+<li>Whether the imported CSV must have the same number of values for each row. If false, rows with fewer values will be padded with empty values. Default is true.</li>
 </ul>
 </li>
 </ul>
@@ -477,7 +477,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:38:12.426076
+Docs Build Date : 2015-05-10 18:08:19.215156
 -->
 </body>
 </html>

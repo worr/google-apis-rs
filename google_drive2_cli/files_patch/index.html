@@ -1093,36 +1093,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p pinned=boolean</strong></p>
-<ul>
-<li>Whether to pin the new revision. A file can have a maximum of 200 pinned revisions.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p update-viewed-date=boolean</strong></p>
-<ul>
-<li>Whether to update the view date after successfully updating the file.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p remove-parents=string</strong></p>
-<ul>
-<li>Comma-separated list of parent IDs to remove.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p timed-text-language=string</strong></p>
-<ul>
-<li>The language of the timed text.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p timed-text-track-name=string</strong></p>
-<ul>
-<li>The timed text track name.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p set-modified-date=boolean</strong></p>
 <ul>
 <li>Whether to set the modified date with the supplied modified date.</li>
@@ -1141,6 +1111,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p add-parents=string</strong></p>
+<ul>
+<li>Comma-separated list of parent IDs to add.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p ocr-language=string</strong></p>
 <ul>
 <li>If ocr is true, hints at the language to use. Valid values are ISO 639-1 codes.</li>
@@ -1153,15 +1129,39 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p pinned=boolean</strong></p>
+<ul>
+<li>Whether to pin the new revision. A file can have a maximum of 200 pinned revisions.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p timed-text-language=string</strong></p>
+<ul>
+<li>The language of the timed text.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p remove-parents=string</strong></p>
+<ul>
+<li>Comma-separated list of parent IDs to remove.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p update-viewed-date=boolean</strong></p>
+<ul>
+<li>Whether to update the view date after successfully updating the file.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p new-revision=boolean</strong></p>
 <ul>
 <li>Whether a blob upload should create a new revision. If false, the blob data in the current head revision is replaced. If true or not set, a new blob is created as head revision, and previous revisions are preserved (causing increased use of the user&#39;s data storage quota).</li>
 </ul>
 </li>
 <li>
-<p><strong>-p add-parents=string</strong></p>
+<p><strong>-p timed-text-track-name=string</strong></p>
 <ul>
-<li>Comma-separated list of parent IDs to add.</li>
+<li>The timed text track name.</li>
 </ul>
 </li>
 </ul>
@@ -1255,7 +1255,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:40:18.494284
+Docs Build Date : 2015-05-10 18:10:16.465813
 -->
 </body>
 </html>

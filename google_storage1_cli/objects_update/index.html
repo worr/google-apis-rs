@@ -504,15 +504,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p generation=string</strong></p>
+<p><strong>-p if-metageneration-not-match=string</strong></p>
 <ul>
-<li>If present, selects a specific revision of this object (as opposed to the latest version, the default).</li>
-</ul>
-</li>
-<li>
-<p><strong>-p projection=string</strong></p>
-<ul>
-<li>Set of properties to return. Defaults to full.</li>
+<li>Makes the operation conditional on whether the object&#39;s current metageneration does not match the given value.</li>
 </ul>
 </li>
 <li>
@@ -522,15 +516,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p if-metageneration-not-match=string</strong></p>
+<p><strong>-p projection=string</strong></p>
 <ul>
-<li>Makes the operation conditional on whether the object&#39;s current metageneration does not match the given value.</li>
+<li>Set of properties to return. Defaults to full.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p predefined-acl=string</strong></p>
 <ul>
 <li>Apply a predefined set of access controls to this object.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p generation=string</strong></p>
+<ul>
+<li>If present, selects a specific revision of this object (as opposed to the latest version, the default).</li>
 </ul>
 </li>
 <li>
@@ -636,7 +636,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:39:44.445351
+Docs Build Date : 2015-05-10 18:09:44.840575
 -->
 </body>
 </html>

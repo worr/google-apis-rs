@@ -579,12 +579,24 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p playlist-id=string</strong></p>
+<ul>
+<li>The playlistId parameter specifies the unique ID of the playlist for which you want to retrieve playlist items. Note that even though this is an optional parameter, every request to retrieve playlist items must specify a value for either the id parameter or the playlistId parameter.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p on-behalf-of-content-owner=string</strong></p>
 <ul>
 <li>
 <p>Note: This parameter is intended exclusively for YouTube content partners.</p>
 <p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p video-id=string</strong></p>
+<ul>
+<li>The videoId parameter specifies that the request should return only the playlist items that contain the specified video.</li>
 </ul>
 </li>
 <li>
@@ -597,18 +609,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p id=string</strong></p>
 <ul>
 <li>The id parameter specifies a comma-separated list of one or more unique playlist item IDs.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p video-id=string</strong></p>
-<ul>
-<li>The videoId parameter specifies that the request should return only the playlist items that contain the specified video.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p playlist-id=string</strong></p>
-<ul>
-<li>The playlistId parameter specifies the unique ID of the playlist for which you want to retrieve playlist items. Note that even though this is an optional parameter, every request to retrieve playlist items must specify a value for either the id parameter or the playlistId parameter.</li>
 </ul>
 </li>
 </ul>
@@ -702,7 +702,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:38:56.681207
+Docs Build Date : 2015-05-10 18:09:00.033261
 -->
 </body>
 </html>

@@ -564,27 +564,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p modified-before=string</strong></p>
-<ul>
-<li>An RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z). Returned assets will have been modified at or before this time.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p role=string</strong></p>
-<ul>
-<li>The role parameter indicates that the response should only contain assets where the current user has the specified level of access.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p page-token=string</strong></p>
 <ul>
 <li>The continuation token, used to page through large result sets. To get the next page of results, set this parameter to the value of nextPageToken from the previous response.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p tags=string</strong></p>
-<ul>
-<li>A comma separated list of tags. Returned assets will contain all the tags from the list.</li>
 </ul>
 </li>
 <li>
@@ -600,15 +582,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p created-after=string</strong></p>
+<p><strong>-p modified-before=string</strong></p>
 <ul>
-<li>An RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z). Returned assets will have been created at or after this time.</li>
+<li>An RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z). Returned assets will have been modified at or before this time.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p creator-email=string</strong></p>
+<p><strong>-p role=string</strong></p>
 <ul>
-<li>An email address representing a user. Returned assets that have been created by the user associated with the provided email address.</li>
+<li>The role parameter indicates that the response should only contain assets where the current user has the specified level of access.</li>
 </ul>
 </li>
 <li>
@@ -618,15 +600,33 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p modified-after=string</strong></p>
+<p><strong>-p tags=string</strong></p>
 <ul>
-<li>An RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z). Returned assets will have been modified at or after this time.</li>
+<li>A comma separated list of tags. Returned assets will contain all the tags from the list.</li>
 </ul>
 </li>
 <li>
 <p><strong>-p search=string</strong></p>
 <ul>
 <li>An unstructured search string used to filter the set of results based on asset metadata.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p creator-email=string</strong></p>
+<ul>
+<li>An email address representing a user. Returned assets that have been created by the user associated with the provided email address.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p modified-after=string</strong></p>
+<ul>
+<li>An RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z). Returned assets will have been modified at or after this time.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p created-after=string</strong></p>
+<ul>
+<li>An RFC 3339 formatted date-time value (e.g. 1970-01-01T00:00:00Z). Returned assets will have been created at or after this time.</li>
 </ul>
 </li>
 </ul>
@@ -720,7 +720,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:38:02.243365
+Docs Build Date : 2015-05-10 18:08:08.746255
 -->
 </body>
 </html>

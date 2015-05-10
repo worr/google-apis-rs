@@ -138,33 +138,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p domain=string</strong></p>
-<ul>
-<li>Restrict to topics with this Freebase domain id.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p help=string</strong></p>
 <ul>
 <li>The keyword to request help on.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p mql-output=string</strong></p>
+<p><strong>-p domain=string</strong></p>
 <ul>
-<li>The MQL query to run againist the results to extract more data.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p spell=string</strong></p>
-<ul>
-<li>Request &#39;did you mean&#39; suggestions</li>
-</ul>
-</li>
-<li>
-<p><strong>-p lang=string</strong></p>
-<ul>
-<li>The code of the language to run the query with. Default is &#39;en&#39;.</li>
+<li>Restrict to topics with this Freebase domain id.</li>
 </ul>
 </li>
 <li>
@@ -174,15 +156,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p filter=string</strong></p>
+<p><strong>-p spell=string</strong></p>
 <ul>
-<li>A filter to apply to the query.</li>
+<li>Request &#39;did you mean&#39; suggestions</li>
 </ul>
 </li>
 <li>
-<p><strong>-p scoring=string</strong></p>
+<p><strong>-p mql-output=string</strong></p>
 <ul>
-<li>Relevance scoring algorithm to use.</li>
+<li>The MQL query to run againist the results to extract more data.</li>
 </ul>
 </li>
 <li>
@@ -192,9 +174,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p with=string</strong></p>
+<p><strong>-p lang=string</strong></p>
 <ul>
-<li>A rule to match against.</li>
+<li>The code of the language to run the query with. Default is &#39;en&#39;.</li>
 </ul>
 </li>
 <li>
@@ -204,15 +186,15 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p prefixed=boolean</strong></p>
+<p><strong>-p scoring=string</strong></p>
 <ul>
-<li>Prefix match against names and aliases.</li>
+<li>Relevance scoring algorithm to use.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p cursor=integer</strong></p>
+<p><strong>-p filter=string</strong></p>
 <ul>
-<li>The cursor value to use for the next page of results.</li>
+<li>A filter to apply to the query.</li>
 </ul>
 </li>
 <li>
@@ -222,9 +204,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p prefixed=boolean</strong></p>
+<ul>
+<li>Prefix match against names and aliases.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p with=string</strong></p>
+<ul>
+<li>A rule to match against.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p mid=string</strong></p>
 <ul>
 <li>A mid to use instead of a query.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p cursor=integer</strong></p>
+<ul>
+<li>The cursor value to use for the next page of results.</li>
 </ul>
 </li>
 <li>
@@ -240,15 +240,21 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p output=string</strong></p>
-<ul>
-<li>An output expression to request data from matches.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p limit=integer</strong></p>
 <ul>
 <li>Maximum number of results to return.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p encode=string</strong></p>
+<ul>
+<li>The encoding of the response. You can use this parameter to enable html encoding.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p output=string</strong></p>
+<ul>
+<li>An output expression to request data from matches.</li>
 </ul>
 </li>
 <li>
@@ -261,12 +267,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p><strong>-p as-of-time=string</strong></p>
 <ul>
 <li>A mql as_of_time value to use with mql_output queries.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p encode=string</strong></p>
-<ul>
-<li>The encoding of the response. You can use this parameter to enable html encoding.</li>
 </ul>
 </li>
 </ul>
@@ -358,7 +358,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:39:09.649425
+Docs Build Date : 2015-05-10 18:09:11.907476
 -->
 </body>
 </html>

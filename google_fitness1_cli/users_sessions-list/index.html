@@ -207,9 +207,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p include-deleted=boolean</strong></p>
+<p><strong>-p page-token=string</strong></p>
 <ul>
-<li>If true, deleted sessions will be returned. When set to true, sessions returned in this response will only have an ID and will not have any other fields.</li>
+<li>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of nextPageToken from the previous response.</li>
 </ul>
 </li>
 <li>
@@ -225,9 +225,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p page-token=string</strong></p>
+<p><strong>-p include-deleted=boolean</strong></p>
 <ul>
-<li>The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of nextPageToken from the previous response.</li>
+<li>If true, deleted sessions will be returned. When set to true, sessions returned in this response will only have an ID and will not have any other fields.</li>
 </ul>
 </li>
 </ul>
@@ -321,7 +321,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:39:03.788215
+Docs Build Date : 2015-05-10 18:09:07.146798
 -->
 </body>
 </html>

@@ -1104,9 +1104,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p ocr=boolean</strong></p>
+<p><strong>-p use-content-as-indexable-text=boolean</strong></p>
 <ul>
-<li>Whether to attempt OCR on .jpg, .png, .gif, or .pdf uploads.</li>
+<li>Whether to use the content as indexable text.</li>
 </ul>
 </li>
 <li>
@@ -1116,9 +1116,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p timed-text-language=string</strong></p>
+<p><strong>-p pinned=boolean</strong></p>
 <ul>
-<li>The language of the timed text.</li>
+<li>Whether to pin the head revision of the uploaded file. A file can have a maximum of 200 pinned revisions.</li>
 </ul>
 </li>
 <li>
@@ -1128,27 +1128,27 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p ocr-language=string</strong></p>
-<ul>
-<li>If ocr is true, hints at the language to use. Valid values are ISO 639-1 codes.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p visibility=string</strong></p>
 <ul>
 <li>The visibility of the new file. This parameter is only relevant when convert=false.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p use-content-as-indexable-text=boolean</strong></p>
+<p><strong>-p ocr-language=string</strong></p>
 <ul>
-<li>Whether to use the content as indexable text.</li>
+<li>If ocr is true, hints at the language to use. Valid values are ISO 639-1 codes.</li>
 </ul>
 </li>
 <li>
-<p><strong>-p pinned=boolean</strong></p>
+<p><strong>-p timed-text-language=string</strong></p>
 <ul>
-<li>Whether to pin the head revision of the uploaded file. A file can have a maximum of 200 pinned revisions.</li>
+<li>The language of the timed text.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p ocr=boolean</strong></p>
+<ul>
+<li>Whether to attempt OCR on .jpg, .png, .gif, or .pdf uploads.</li>
 </ul>
 </li>
 </ul>
@@ -1242,7 +1242,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:40:18.396966
+Docs Build Date : 2015-05-10 18:10:16.358006
 -->
 </body>
 </html>

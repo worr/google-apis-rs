@@ -574,21 +574,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p hl=string</strong></p>
+<p><strong>-p category-id=string</strong></p>
 <ul>
-<li>The hl parameter should be used for filter out the properties that are not in the given language. Used for the brandingSettings part.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p for-username=string</strong></p>
-<ul>
-<li>The forUsername parameter specifies a YouTube username, thereby requesting the channel associated with that username.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p on-behalf-of-content-owner=string</strong></p>
-<ul>
-<li>The onBehalfOfContentOwner parameter indicates that the authenticated user is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with needs to be linked to the specified YouTube content owner.</li>
+<li>The categoryId parameter specifies a YouTube guide category, thereby requesting YouTube channels associated with that category.</li>
 </ul>
 </li>
 <li>
@@ -598,21 +586,9 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
-<p><strong>-p mine=boolean</strong></p>
+<p><strong>-p on-behalf-of-content-owner=string</strong></p>
 <ul>
-<li>Set this parameter&#39;s value to true to instruct the API to only return channels owned by the authenticated user.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p category-id=string</strong></p>
-<ul>
-<li>The categoryId parameter specifies a YouTube guide category, thereby requesting YouTube channels associated with that category.</li>
-</ul>
-</li>
-<li>
-<p><strong>-p max-results=integer</strong></p>
-<ul>
-<li>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</li>
+<li>The onBehalfOfContentOwner parameter indicates that the authenticated user is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with needs to be linked to the specified YouTube content owner.</li>
 </ul>
 </li>
 <li>
@@ -622,15 +598,39 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 </ul>
 </li>
 <li>
+<p><strong>-p for-username=string</strong></p>
+<ul>
+<li>The forUsername parameter specifies a YouTube username, thereby requesting the channel associated with that username.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p my-subscribers=boolean</strong></p>
 <ul>
 <li>Set this parameter&#39;s value to true to retrieve a list of channels that subscribed to the authenticated user&#39;s channel.</li>
 </ul>
 </li>
 <li>
+<p><strong>-p mine=boolean</strong></p>
+<ul>
+<li>Set this parameter&#39;s value to true to instruct the API to only return channels owned by the authenticated user.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p max-results=integer</strong></p>
+<ul>
+<li>The maxResults parameter specifies the maximum number of items that should be returned in the result set.</li>
+</ul>
+</li>
+<li>
 <p><strong>-p id=string</strong></p>
 <ul>
 <li>The id parameter specifies a comma-separated list of the YouTube channel ID(s) for the resource(s) that are being retrieved. In a channel resource, the id property specifies the channel&#39;s YouTube channel ID.</li>
+</ul>
+</li>
+<li>
+<p><strong>-p hl=string</strong></p>
+<ul>
+<li>The hl parameter should be used for filter out the properties that are not in the given language. Used for the brandingSettings part.</li>
 </ul>
 </li>
 </ul>
@@ -724,7 +724,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:38:55.906726
+Docs Build Date : 2015-05-10 18:08:59.400325
 -->
 </body>
 </html>

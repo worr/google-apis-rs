@@ -572,12 +572,6 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <code>-p</code> for completeness.</p>
 <ul>
 <li>
-<p><strong>-p stream-id=string</strong></p>
-<ul>
-<li>The streamId parameter specifies the unique ID of the video stream that is being bound to a broadcast. If this parameter is omitted, the API will remove any existing binding between the broadcast and a video stream.</li>
-</ul>
-</li>
-<li>
 <p><strong>-p on-behalf-of-content-owner-channel=string</strong></p>
 <ul>
 <li>
@@ -594,6 +588,12 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 <p>Note: This parameter is intended exclusively for YouTube content partners.</p>
 <p>The onBehalfOfContentOwner parameter indicates that the request&#39;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>-p stream-id=string</strong></p>
+<ul>
+<li>The streamId parameter specifies the unique ID of the video stream that is being bound to a broadcast. If this parameter is omitted, the API will remove any existing binding between the broadcast and a video stream.</li>
 </ul>
 </li>
 </ul>
@@ -687,7 +687,7 @@ or more key-value-pairs, and is called like this <code>-p k1=v1 k2=v2</code> eve
 
 <!--
 MkDocs version  : 0.12.2
-Docs Build Date : 2015-05-10 13:38:56.345145
+Docs Build Date : 2015-05-10 18:08:59.710735
 -->
 </body>
 </html>
